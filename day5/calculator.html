@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="expression" class="inputfild">
+            <input type="text" value="" readonly>
+        </div>
+        <div class="buttons">
+            <div class="action">
+                <button value="+">+</button>
+                <button value="-">-</button>
+                <button value="*">*</button>
+                <button value="/">/</button>
+            </div>
+            <div class="number">
+                <button value="1" class="btn1">1</button>
+                <button value="2" class="btn1">2</button>
+                <button value="3" class="btn1">3</button>
+                <button value="4" class="btn1">4</button>
+                <button value="5" class="btn1">5</button>
+                <button value="6" class="btn1">6</button>
+                <button value="7" class="btn1">7</button>
+                <button value="8" class="btn1">8</button>
+                <button value="9" class="btn1">9</button>
+                <button value="0" class="btn1">0</button>
+                <button class="btn2" onclick="clearScreen()">C</button>
+                <button style="background-color: green; color: white;" class="btn2" onclick="calculator()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

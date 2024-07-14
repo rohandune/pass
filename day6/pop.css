@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.container button{
+    width: 150px;
+    height: 60px;
+    background: blueviolet;
+    color: white;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid blueviolet;
+    cursor: pointer;
+    transition: all ease-in 0.4s;
+}
+.container button:hover{
+    background: green;
+}
+.container button:active{
+    background: red;
+    
+}
+.model{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 100px;
+    transition: all ease-in 0.4s;
+    opacity: 0;
+    display: none;
+    
+}
+.model .box{
+    width: 300px;
+    height: 120px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.model .box p{
+    text-align: center;
+    font-size: 15px;
+}
+.model .box button{
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.model .box button:hover{
+    background: red;
+}
+.msg{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 450px;
+    height: 60px;
+    background: white;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 5px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    transition: all ease-in 0.4s;
+    opacity: 0;
+
+
+}
+.msg i{
+    font-size: 20px;
+    color: green;
+}
+.msg p{
+    font-size: 10px;
+    
+}
+@keyframes anim1{
+    from{
+        transform: translateX(400px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes anim2{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(400px);
+    }
+}

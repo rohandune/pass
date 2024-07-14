@@ -1,0 +1,83 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg,blueviolet ,darkorange);
+
+
+}
+h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+button{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    background: white;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.joke{
+    width: 700px;
+    height: 160px;
+    background: white;
+    padding: 8px 15px;
+}
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0, 0, 0.81);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     display: none; 
+}
+.box{
+    width: 70px;
+    height: 70px;
+    background: silver;
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid silver;
+    border-top: 5px solid blue;
+    transition: all ease-in 0.4s;
+    animation: rotate linear infinite 1s;
+
+}
+.modal .box .loder{
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(359deg);
+    }
